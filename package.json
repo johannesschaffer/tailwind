@@ -1,0 +1,25 @@
+{
+    "name": "@johannesschaffer/tailwind",
+    "version": "1.0.0",
+    "description": "Tailwind presets & plugins",
+    "author": "Johannes Schaffer",
+    "license": "ISC",
+    "exports": {
+        "./presets": "./dist/presets/index.js",
+        "./plugins": "./dist/plugins/index.js"
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build": "npm run clean && npm run compile",
+        "compile": "tsc --build --force",
+        "clean": "rimraf dist"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.7",
+        "rimraf": "^4.4.1",
+        "typescript": "latest"
+    },
+    "peerDependencies": {
+        "tailwindcss": "^3.3.1"
+    }
+}
