@@ -11,8 +11,11 @@ export const extended = {
                 '450': '450ms',
             },
             screens: {
+                'smmax': {'max': '639px'},
+                'mdmax': {'max': '767px'},
                 'lgmax': {'max': '1023px'},
-                'xlmax': {'max': '1279px'}
+                'xlmax': {'max': '1279px'},
+                '2xlmax': {'max': '1535px'},
             }
         }
     }
